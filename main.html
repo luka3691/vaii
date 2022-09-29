@@ -21,9 +21,33 @@
             left: 50%;
             transform: translate(-50%, -50%);
         }
+        .vtak {
+            background-image: url("obrazky/vtak.png");
+            width: 200px;
+            height: 200px;
+            background-size: contain;
+            position: absolute;
+        }
+        .vlavo {
+            left: 0;
+        }
+        .vpravo {
+            right: 0;
+            transform: scaleX(-1);
+        }
+        .dole {
+            top: 0;
+        }
+        .hore {
+            bottom: 0;
+        }
     </style>
 </head>
 <body>
     <div class="slnko"></div>
+    <div class="vtak hore vlavo"></div>
+    <div class="vtak hore vpravo"></div>
+    <div class="vtak dole vlavo"></div>
+    <div class="vtak dole vpravo"></div>
 </body>
 </html>
